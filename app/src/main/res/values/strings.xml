@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Qde</string>
+    <string name="a1">1</string>
+    <string name="a2">2</string>
+    <string name="a3">3</string>
+    <string name="a4">4</string>
+    <string name="a5">5</string>
+    <string name="a6">6</string>
+    <string name="a7">7</string>
+    <string name="a8">8</string>
+    <string name="a9">9</string>
+    <string name="a0">0</string>
+    <string name="ax">*</string>
+    <string name="aj">-</string>
+    <string name="aji">+</string>
+    <string name="ac">/</string>
+    <string name="der">←</string>
+    <string name="ad">.</string>
+    <string name="ay">=</string>
+    <string name="c">C</string>
+    <string name="bai">%</string>
+</resources>
