@@ -99,21 +99,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_9:
                 if (clear_flag) {
                     clear_flag =false ;
-                    str ="" ;
                     ttvxian.setText("");
                 }
                 clear_fuhao=true;
                 sbuf.append(((Button)v).getText());
-
                 ttvxian.setText(prin()+sbuf);
                 break ;
             case R.id.btn_dian:
-                if(list.size()==0)
+                if(sbuf.length()==0)
                     clear_dian=true;
                 if(clear_dian) {
                     if (clear_flag) {
                         clear_flag =false ;
-                        str ="" ;
                         ttvxian.setText("");
                     }
                     sbuf.append(((Button)v).getText());
@@ -150,7 +147,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         list.remove(list.size() - 1);
                         sbuf.append(list.get(list.size() - 1));
                         ttvxian.setText(prin());
-                    }
+                    }else
+                        ttvxian.setText("");
                 }else if(list.size()==0||del){
                     sbuf.deleteCharAt(sbuf.length() - 1);
                     list.add(sbuf.toString());
@@ -172,6 +170,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 list.add(sbuf.toString());
                 getResult3();
                 sl=null;
+                sbuf.setLength(0);
                 break ;
 
         }
