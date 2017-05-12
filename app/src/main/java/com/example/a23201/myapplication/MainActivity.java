@@ -84,8 +84,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_chu.setOnClickListener(this);
     }
     public void onClick(View v) {
-        String str = ttvxian.getText().toString();
-        String str1 =ttvjieguo.getText().toString();
         switch (v.getId()) {
             case R.id.btn_0:
             case R.id.btn_1:
